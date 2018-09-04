@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B01D09D213E8F95001EE60A /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B01D09C213E8F95001EE60A /* AlbumViewController.swift */; };
+		2B01D09F213E953D001EE60A /* TakeAPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B01D09E213E953D001EE60A /* TakeAPhotoViewController.swift */; };
 		2B48F509213800CA00EC9608 /* ImageRealmSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B48F508213800CA00EC9608 /* ImageRealmSampleTests.swift */; };
 		2B48F514213800CA00EC9608 /* ImageRealmSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B48F513213800CA00EC9608 /* ImageRealmSampleUITests.swift */; };
 		2B94DB40213E4F060058019E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B94DB3C213E4F060058019E /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		15F5C42EFF87EF7EB050733F /* Pods-ImageRealmSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageRealmSampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImageRealmSampleTests/Pods-ImageRealmSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		1FC8B775121926C78DC44AB8 /* Pods-ImageRealmSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageRealmSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageRealmSample/Pods-ImageRealmSample.debug.xcconfig"; sourceTree = "<group>"; };
 		2B01D09C213E8F95001EE60A /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		2B01D09E213E953D001EE60A /* TakeAPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeAPhotoViewController.swift; sourceTree = "<group>"; };
 		2B48F4F0213800C800EC9608 /* ImageRealmSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageRealmSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B48F504213800CA00EC9608 /* ImageRealmSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageRealmSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B48F508213800CA00EC9608 /* ImageRealmSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRealmSampleTests.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			children = (
 				2B94DB44213E4F210058019E /* HomeViewController.swift */,
 				2B01D09C213E8F95001EE60A /* AlbumViewController.swift */,
+				2B01D09E213E953D001EE60A /* TakeAPhotoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B01D09F213E953D001EE60A /* TakeAPhotoViewController.swift in Sources */,
 				2B01D09D213E8F95001EE60A /* AlbumViewController.swift in Sources */,
 				2B94DB45213E4F220058019E /* HomeViewController.swift in Sources */,
 				2B94DB43213E4F060058019E /* AppDelegate.swift in Sources */,
