@@ -1,0 +1,6 @@
+framework module Pods_ImageRealmSample {
+  umbrella header "Pods-ImageRealmSample-umbrella.h"
+
+  export *
+  module * { export * }
+}
