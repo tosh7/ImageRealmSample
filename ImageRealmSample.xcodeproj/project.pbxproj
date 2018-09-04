@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B48F4F4213800C800EC9608 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B48F4F3213800C800EC9608 /* AppDelegate.swift */; };
-		2B48F4F6213800C800EC9608 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B48F4F5213800C800EC9608 /* ViewController.swift */; };
-		2B48F4F9213800C800EC9608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B48F4F7213800C800EC9608 /* Main.storyboard */; };
-		2B48F4FB213800CA00EC9608 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B48F4FA213800CA00EC9608 /* Assets.xcassets */; };
-		2B48F4FE213800CA00EC9608 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B48F4FC213800CA00EC9608 /* LaunchScreen.storyboard */; };
+		2B01D09D213E8F95001EE60A /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B01D09C213E8F95001EE60A /* AlbumViewController.swift */; };
 		2B48F509213800CA00EC9608 /* ImageRealmSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B48F508213800CA00EC9608 /* ImageRealmSampleTests.swift */; };
 		2B48F514213800CA00EC9608 /* ImageRealmSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B48F513213800CA00EC9608 /* ImageRealmSampleUITests.swift */; };
+		2B94DB40213E4F060058019E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B94DB3C213E4F060058019E /* Assets.xcassets */; };
+		2B94DB43213E4F060058019E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B94DB3F213E4F060058019E /* AppDelegate.swift */; };
+		2B94DB45213E4F220058019E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B94DB44213E4F210058019E /* HomeViewController.swift */; };
+		2B94DB48213E4FBF0058019E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B94DB46213E4FBF0058019E /* Main.storyboard */; };
+		2B94DB49213E4FBF0058019E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B94DB47213E4FBF0058019E /* LaunchScreen.storyboard */; };
 		44483FA927709CB024F99D0B /* Pods_ImageRealmSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F46CAC21BE04307D390DA895 /* Pods_ImageRealmSampleTests.framework */; };
 		74D20027F9371A25EA1DAD53 /* Pods_ImageRealmSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DA8943CE2565C685D861767 /* Pods_ImageRealmSampleUITests.framework */; };
 		ABCCB8AB26F0DFE4CA4B3F8F /* Pods_ImageRealmSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1428FEFBFF9829E62226E786 /* Pods_ImageRealmSample.framework */; };
@@ -40,19 +41,20 @@
 		1428FEFBFF9829E62226E786 /* Pods_ImageRealmSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageRealmSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15F5C42EFF87EF7EB050733F /* Pods-ImageRealmSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageRealmSampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImageRealmSampleTests/Pods-ImageRealmSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		1FC8B775121926C78DC44AB8 /* Pods-ImageRealmSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageRealmSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageRealmSample/Pods-ImageRealmSample.debug.xcconfig"; sourceTree = "<group>"; };
+		2B01D09C213E8F95001EE60A /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		2B48F4F0213800C800EC9608 /* ImageRealmSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageRealmSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B48F4F3213800C800EC9608 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2B48F4F5213800C800EC9608 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2B48F4F8213800C800EC9608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2B48F4FA213800CA00EC9608 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2B48F4FD213800CA00EC9608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2B48F4FF213800CA00EC9608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B48F504213800CA00EC9608 /* ImageRealmSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageRealmSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B48F508213800CA00EC9608 /* ImageRealmSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRealmSampleTests.swift; sourceTree = "<group>"; };
 		2B48F50A213800CA00EC9608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B48F50F213800CA00EC9608 /* ImageRealmSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageRealmSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B48F513213800CA00EC9608 /* ImageRealmSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRealmSampleUITests.swift; sourceTree = "<group>"; };
 		2B48F515213800CA00EC9608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B94DB3C213E4F060058019E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B94DB3D213E4F060058019E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B94DB3F213E4F060058019E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2B94DB44213E4F210058019E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2B94DB46213E4FBF0058019E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		2B94DB47213E4FBF0058019E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		788A0935F4C60EF151F375AC /* Pods-ImageRealmSampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageRealmSampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageRealmSampleUITests/Pods-ImageRealmSampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8DA8943CE2565C685D861767 /* Pods_ImageRealmSampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageRealmSampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C62D884F4D9B79E62EBE00D2 /* Pods-ImageRealmSampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageRealmSampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImageRealmSampleUITests/Pods-ImageRealmSampleUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +101,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2B01D09B213E8E0C001EE60A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2B94DB44213E4F210058019E /* HomeViewController.swift */,
+				2B01D09C213E8F95001EE60A /* AlbumViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		2B48F4E7213800C800EC9608 = {
 			isa = PBXGroup;
 			children = (
@@ -124,12 +135,8 @@
 		2B48F4F2213800C800EC9608 /* ImageRealmSample */ = {
 			isa = PBXGroup;
 			children = (
-				2B48F4F3213800C800EC9608 /* AppDelegate.swift */,
-				2B48F4F5213800C800EC9608 /* ViewController.swift */,
-				2B48F4F7213800C800EC9608 /* Main.storyboard */,
-				2B48F4FA213800CA00EC9608 /* Assets.xcassets */,
-				2B48F4FC213800CA00EC9608 /* LaunchScreen.storyboard */,
-				2B48F4FF213800CA00EC9608 /* Info.plist */,
+				2B94DB3A213E4E5C0058019E /* ReSources */,
+				2B94DB3B213E4E730058019E /* Sources */,
 			);
 			path = ImageRealmSample;
 			sourceTree = "<group>";
@@ -150,6 +157,26 @@
 				2B48F515213800CA00EC9608 /* Info.plist */,
 			);
 			path = ImageRealmSampleUITests;
+			sourceTree = "<group>";
+		};
+		2B94DB3A213E4E5C0058019E /* ReSources */ = {
+			isa = PBXGroup;
+			children = (
+				2B94DB47213E4FBF0058019E /* LaunchScreen.storyboard */,
+				2B94DB46213E4FBF0058019E /* Main.storyboard */,
+				2B94DB3C213E4F060058019E /* Assets.xcassets */,
+				2B94DB3D213E4F060058019E /* Info.plist */,
+			);
+			path = ReSources;
+			sourceTree = "<group>";
+		};
+		2B94DB3B213E4E730058019E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2B94DB3F213E4F060058019E /* AppDelegate.swift */,
+				2B01D09B213E8E0C001EE60A /* Controllers */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		5DE6675FD0503A9943960A5F /* Pods */ = {
@@ -237,6 +264,7 @@
 				TargetAttributes = {
 					2B48F4EF213800C800EC9608 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					2B48F503213800CA00EC9608 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -273,9 +301,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B48F4FE213800CA00EC9608 /* LaunchScreen.storyboard in Resources */,
-				2B48F4FB213800CA00EC9608 /* Assets.xcassets in Resources */,
-				2B48F4F9213800C800EC9608 /* Main.storyboard in Resources */,
+				2B94DB48213E4FBF0058019E /* Main.storyboard in Resources */,
+				2B94DB49213E4FBF0058019E /* LaunchScreen.storyboard in Resources */,
+				2B94DB40213E4F060058019E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,16 +329,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ImageRealmSample/Pods-ImageRealmSample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
@@ -325,15 +349,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ImageRealmSample-checkManifestLockResult.txt",
 			);
@@ -347,15 +367,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ImageRealmSampleUITests-checkManifestLockResult.txt",
 			);
@@ -369,15 +385,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ImageRealmSampleTests-checkManifestLockResult.txt",
 			);
@@ -393,8 +405,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B48F4F6213800C800EC9608 /* ViewController.swift in Sources */,
-				2B48F4F4213800C800EC9608 /* AppDelegate.swift in Sources */,
+				2B01D09D213E8F95001EE60A /* AlbumViewController.swift in Sources */,
+				2B94DB45213E4F220058019E /* HomeViewController.swift in Sources */,
+				2B94DB43213E4F060058019E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,25 +441,6 @@
 			targetProxy = 2B48F510213800CA00EC9608 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		2B48F4F7213800C800EC9608 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2B48F4F8213800C800EC9608 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2B48F4FC213800CA00EC9608 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2B48F4FD213800CA00EC9608 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2B48F516213800CA00EC9608 /* Debug */ = {
@@ -568,9 +562,10 @@
 			baseConfigurationReference = 1FC8B775121926C78DC44AB8 /* Pods-ImageRealmSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56787CM63P;
-				INFOPLIST_FILE = ImageRealmSample/Info.plist;
+				INFOPLIST_FILE = ImageRealmSample/ReSources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -578,6 +573,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = zhogehoge.ImageRealmSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -588,9 +584,10 @@
 			baseConfigurationReference = C9F54556DCCA3996B6238D44 /* Pods-ImageRealmSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56787CM63P;
-				INFOPLIST_FILE = ImageRealmSample/Info.plist;
+				INFOPLIST_FILE = ImageRealmSample/ReSources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
