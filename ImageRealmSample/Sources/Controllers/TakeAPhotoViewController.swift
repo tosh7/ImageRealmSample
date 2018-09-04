@@ -8,21 +8,23 @@
 
 import UIKit
 
-class TakeAPhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class TakeAPhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var photoImage: UIImageView!     //ここに撮った写真が保存されるよ
+    @IBOutlet weak var titleTextField: UITextField!
     var flag = true     //これを使って最初だけカメラが立ち上がるようにしているよ
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        titleTextField.delegate = self
     }
     
     //viewDIdAppearはviewDidLoadの後に呼ばれるメソッド、viewDidLoadでは、プログラムの性質上カメラを呼べないから今回は使用しているよ
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
-        if flag{        //もしflagがtrueなら
+        if flag{            //もしflagがtrueなら
             flag = false    //flagをfalseに変えru(これがないとキャンセルした時に永遠にカメラが立ち上がっちゃう
             useCamera()     //cameraを呼び出すメソッドを呼んでいるよ
         }
@@ -55,5 +57,15 @@ class TakeAPhotoViewController: UIViewController, UIImagePickerControllerDelegat
         photoImage.image = info[UIImagePickerControllerEditedImage ] as? UIImage
         
         dismiss(animated: true, completion: nil)
+    }
+    
+    //ここから下では、キーボードをしまったりしているよ
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
 }
