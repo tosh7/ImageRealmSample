@@ -22,6 +22,9 @@
                                 <rect key="frame" x="111" y="359" width="153" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Camera"/>
+                                <connections>
+                                    <segue destination="LdK-lG-ZyF" kind="presentation" id="csy-k5-68O"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXn-Qq-GPr">
                                 <rect key="frame" x="123" y="491" width="128" height="45"/>
@@ -55,20 +58,52 @@
             </objects>
             <point key="canvasLocation" x="1292" y="504"/>
         </scene>
-        <!--View Controller-->
+        <!--TakeA Photo View Controller-->
         <scene sceneID="bJj-sz-DKh">
             <objects>
-                <viewController id="LdK-lG-ZyF" sceneMemberID="viewController">
+                <viewController id="LdK-lG-ZyF" customClass="TakeAPhotoViewController" customModule="ImageRealmSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fXR-tK-lOy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jse-ox-t33">
+                                <rect key="frame" x="55" y="551" width="74" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ReTake"/>
+                                <connections>
+                                    <action selector="retakePhoto:" destination="LdK-lG-ZyF" eventType="touchUpInside" id="gYK-4k-h38"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mol-uk-t2p">
+                                <rect key="frame" x="244" y="552" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="savePhoto:" destination="LdK-lG-ZyF" eventType="touchUpInside" id="wKn-Jk-3cH"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gpu-BE-GDG">
+                                <rect key="frame" x="55" y="470" width="247" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QVy-pd-HZD">
+                                <rect key="frame" x="36" y="101" width="303" height="303"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="WJr-9e-Jxx"/>
                     </view>
+                    <connections>
+                        <outlet property="photoImage" destination="QVy-pd-HZD" id="GZK-Hw-MmQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ybC-mD-A58" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1292" y="-237"/>
+            <point key="canvasLocation" x="1292" y="-237.03148425787109"/>
         </scene>
     </scenes>
 </document>
