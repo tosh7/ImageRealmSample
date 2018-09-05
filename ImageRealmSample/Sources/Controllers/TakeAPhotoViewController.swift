@@ -39,9 +39,15 @@ class TakeAPhotoViewController: UIViewController, UIImagePickerControllerDelegat
     }
     
     @IBAction func savePhoto(_ sender: Any) {
+        let imageData: Data = UIImageJPEGRepresentation(photoImage.image!, 1)!
+        
+        imageAndTitle.photoImageData = imageData
+        
         try! realm.write{
             realm.add(imageAndTitle)
         }
+        
+        self.dismiss(animated: true, completion: nil)
     }
     
     //ここでカメラを呼び出して写真を撮っているよ
@@ -62,7 +68,7 @@ class TakeAPhotoViewController: UIViewController, UIImagePickerControllerDelegat
     //ここでは、先ほど撮った写真をUIImageViewに入れているよ
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         photoImage.image = info[UIImagePickerControllerEditedImage] as? UIImage
-        imageAndTitle.photoImageData = info[UIImagePickerControllerEditedImage] as! Data
+//        imageAndTitle.photoImageData = info[UIImagePickerControllerEditedImage] as! Data
         
         dismiss(animated: true, completion: nil)
     }
@@ -80,4 +86,6 @@ class TakeAPhotoViewController: UIViewController, UIImagePickerControllerDelegat
         
         self.view.endEditing(true)
     }
+    
+    
 }
