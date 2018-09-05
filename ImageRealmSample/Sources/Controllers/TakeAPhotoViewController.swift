@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import RealmSwift
 
 class TakeAPhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
+    
+    let realm = try! Realm()
+    let imageAndTitle = RealmData()
     
     @IBOutlet weak var photoImage: UIImageView!     //ここに撮った写真が保存されるよ
     @IBOutlet weak var titleTextField: UITextField!
@@ -35,6 +39,15 @@ class TakeAPhotoViewController: UIViewController, UIImagePickerControllerDelegat
     }
     
     @IBAction func savePhoto(_ sender: Any) {
+        let imageData: Data = UIImageJPEGRepresentation(photoImage.image!, 1)!
+        
+        imageAndTitle.photoImageData = imageData
+        
+        try! realm.write{
+            realm.add(imageAndTitle)
+        }
+        
+        self.dismiss(animated: true, completion: nil)
     }
     
     //ここでカメラを呼び出して写真を撮っているよ
@@ -54,18 +67,29 @@ class TakeAPhotoViewController: UIViewController, UIImagePickerControllerDelegat
     
     //ここでは、先ほど撮った写真をUIImageViewに入れているよ
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        photoImage.image = info[UIImagePickerControllerEditedImage ] as? UIImage
+        photoImage.image = info[UIImagePickerControllerEditedImage] as? UIImage
+//        imageAndTitle.photoImageData = info[UIImagePickerControllerEditedImage] as! Data
         
         dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func back(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     //ここから下では、キーボードをしまったりしているよ
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+        imageAndTitle.title = titleTextField.text!
+        
         return true
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        imageAndTitle.title = titleTextField.text!
+        
         self.view.endEditing(true)
     }
+    
+    
 }
